@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/css/index.css" type="text/css">
+    <script type="text/javascript">
+        window.onload = function() {
+            selector('journalbutton').onclick = function() {
+                window.location.href = '/journal'
+            }
+        }
+
+        function selector(selector) {
+            return document.getElementsByClassName(selector)[0];
+        }
+    </script>
+</head>
+<body>
+    <div class="container background">
+        <div class = "menuboard">
+            <button class = "journalbutton button5">journal</button>
+        </div>
+    </div>
+</body>
+</html>
